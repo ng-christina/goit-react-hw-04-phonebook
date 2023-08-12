@@ -1,0 +1,35 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.itemName {
+  font-weight: 600;
+  margin-left: auto;
+}
+.itemNumber {
+  margin-left: auto;
+}
+.btnDelete {
+  font-size: 10px;
+  margin-left: auto;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+
+  background: transparent;
+  color: rgb(62, 55, 62);
+  border: none;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  border-radius: 40px;
+  box-shadow: 3px 3px 5px hsl(30, 90%, 59%), -3px -3px 5px #df5858;
+}
+
+.btnDelete:hover {
+  background-image: linear-gradient(to left, #ff9263cc, #ffdd8c);
+  border-color: rgb(250, 170, 50);
+  transform: scale(1.1);
+}
