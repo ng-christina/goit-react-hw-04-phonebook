@@ -28,11 +28,10 @@ const App = () => {
   };
 
   const changeFilter = e => {
-    setContacts(setFilter(e.target.value));
+    setFilter(e.target.value);
   };
 
   const normalizedFilter = filter.toLowerCase();
-
   const visibleContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(normalizedFilter)
   );

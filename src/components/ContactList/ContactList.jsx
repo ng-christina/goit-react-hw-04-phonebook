@@ -17,7 +17,8 @@ const ContactList = ({ contacts, onDeleteBtn }) => (
 );
 
 ContactList.propTypes = {
-  contacts: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string.isRequired)),
-  onDeleteBtn: PropTypes.func.isRequired,
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.string.isRequired })
+  ),
 };
 export default ContactList;
